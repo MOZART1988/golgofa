@@ -1,0 +1,11 @@
+.login-wrapper{
+    margin-left: 25%;
+    margin-top: 20%;
+}
+.breadcrumb {
+    padding: 8px 0px!important;
+}
+
+.cke_tpl_preview_img img {
+    width: 60px;
+}

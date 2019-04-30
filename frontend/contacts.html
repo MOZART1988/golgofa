@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Roboto:300,400,400i,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/vendors.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div class="wrapper">
+  <header class="header" id="header">
+  <div class="container">
+    <div class="menu-toggle" id="jsMenuToggle"><i></i></div>
+    <div class="header-logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="header-nav">
+      <nav class="header-menu" id="jsNav">
+        <ul class="clearlist">
+          <li class="sub">
+            <a href="#">О нас</a>
+            <nav>
+              <ul class="clearlist">
+                <li class=""><a href="text-page.html">О нас</a></li>
+                <li><a href="text-page.html">Вероучение</a></li>
+                <li class=""><a href="channels.html">Наши проекты</a></li>
+                <li class=""><a href="history.html">История церкви</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class=""><a href="life.html">Жизнь Церкви</a></li>
+          <li class=""><a href="donations.html">Служение Церкви</a></li>
+          <li class="active"><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-options">
+        <div class="header-search">
+          <form>
+            <input type="text" class="form-control" placeholder="Введите запрос">
+            <input type="submit">
+          </form>
+        </div>
+        <ul class="header-lang clearlist">
+          <li><a href="">Каз</a></li>
+          <li class="active"><a href="">Рус</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  
+  <main class="page page-contacts">
+    <div class="contacts-map">
+      <div id="map"></div>
+    </div>
+    <div class="container">
+      <div class="page-content contacts-content">
+        <figure class="contacts-block"><img src="images/icons/icon-address.png" alt="">
+          <figcaption>
+            <h4>Наш адрес:</h4>
+            <p>050005, Республика Казахстан, г. Алматы, ул. Бекетова 12</p>
+          </figcaption>
+        </figure>
+        <figure class="contacts-block"><img src="images/icons/icon-contacts.png" alt="">
+          <figcaption>
+            <h4>Наши контакты для связи:</h4>
+            <ul class="clearlist">
+              <li><img src="images/icons/icon-phone.png" alt="">+7 (727) 247 99 12</li>
+              <li><img src="images/icons/icon-mail.png" alt="">golgofa1917@gmail.com</li>
+            </ul>
+            <a href="" class="btn btn--mail" data-modal="#modal-contacts">Написать нам</a>
+          </figcaption>
+        </figure>
+        <hr class="contacts-divider" />
+        <figure class="contacts-block"><img src="images/icons/icon-shedule.png" alt="">
+          <figcaption>
+            <h4>Расписание Богослужений:</h4>
+            <div class="contacts-shedule">
+              <div class="tr">
+                <div class="th">Воскресенье</div>
+                <div class="td">
+                  Служение утро
+                  <time>9:30</time>
+                </div>
+                <div class="td">
+                  Служение вечер
+                  <time>17:00</time>
+                </div>
+                <div class="td">
+                  Молодежное общение
+                  <time>19:00</time>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="th">Вторник</div>
+                <div class="td">
+                  Братское общение
+                  <time>18:00</time>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="th">Среда</div>
+                <div class="td">
+                  Разбор Писания
+                  <time>18:00</time>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="th">Пятница</div>
+                <div class="td">
+                  Молитвенное служение
+                  <time>18:00</time>
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal-contacts" id="modal-contacts">
+    <div class="modal-dialog">
+      <a href="" class="modal-close"></a>
+      <h3 class="modal-title">Написать нам</h3>
+      <div class="modal-form">
+        <form action="">
+          <div class="form-block">
+            <input type="text" class="form-control" id="name">
+            <label for="name">Ваше имя</label>
+          </div>
+          <div class="form-block">
+            <input type="email" class="form-control invalid" id="email">
+            <label for="email">Электронная почта</label>
+          </div>
+          <div class="form-block">
+            <input type="text" class="form-control" id="phone">
+            <label for="phone">Номер телефона</label>
+          </div>
+          <div class="form-block">
+            <textarea class="form-control" id="message"></textarea>
+            <label for="message">Ваше сообщение</label>
+          </div>
+          <div class="form-block">
+            
+            <button type="submit" class="btn" data-modal="#modal-success">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-contacts" id="modal-success">
+    <div class="modal-dialog">
+      <a href="" class="modal-close" data-modal-close></a>
+      <h3 class="modal-title">Написать нам</h3>
+      <div class="modal-success">
+        <img src="images/icons/icon-success.png" alt="">
+        <h3>Сообщение успешно отправлено!</h3>
+        <p>Мы свяжемся с вами ближайшее время</p>
+      </div>
+      <div class="modal-form">
+        <div class="form-block">
+          <button type="button" class="btn" data-modal-close>Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <ul class="footer-socials clearlist">
+      <li><a href="">
+          <img src="images/icons/icon-inst.png" alt="">
+          <img src="images/icons/icon-inst-active.png" alt="">
+        </a></li>
+      <li><a href="">
+          <img src="images/icons/icon-fb.png" alt="">
+          <img src="images/icons/icon-fb-active.png" alt="">
+        </a></li>
+      <li><a href="">
+          <img src="images/icons/icon-vk.png" alt="">
+          <img src="images/icons/icon-vk-active.png" alt="">
+        </a></li>
+      <li><a href="">
+          <img src="images/icons/icon-tg.png" alt="">
+          <img src="images/icons/icon-tg-active.png" alt="">
+        </a></li>
+      <li><a href="">
+          <img src="images/icons/icon-yt.png" alt="">
+          <img src="images/icons/icon-yt-active.png" alt="">
+        </a></li>
+    </ul>
+    <div class="footer-copyright">© «Golgofa» Первая Алматинская Церковь Евангельских Христиан-Баптистов, 2018</div>
+    <div class="footer-address">Казахстан, 050005, г.Алматы ул. <span>Бекетова 12</span></div>
+  </div>
+
+</footer>
+
+
+<script src="js/vendors.js"></script>
+<script src="js/bundle.js"></script>
+</body>
+</html>
